@@ -56,10 +56,12 @@ public class Client {
                         System.out.println(message);
                     } catch (IOException e) {
                         closeEverything(socket, bufferedReader, bufferedWriter);
+                        break;
                     }
                 }
             }
         }).start();
+        System.out.println("Завершение работы клиента");
     }
 
     /**

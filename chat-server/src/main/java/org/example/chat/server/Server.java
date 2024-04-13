@@ -20,6 +20,7 @@ public class Server {
                 Thread thread = new Thread(clientManager);
                 thread.start();
             } catch (IOException e) {
+                closeSocket();
 
 
             }
